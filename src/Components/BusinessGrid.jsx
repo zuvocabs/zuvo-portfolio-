@@ -163,13 +163,11 @@ export default function BusinessGrid() {
                     </div>
 
                     {/* Card Canvas Logo / Image - Edge-to-edge full bleed representation */}
-                    <div className="absolute inset-0 flex items-center justify-center p-6 select-none z-10 overflow-hidden">
+                    <div className="absolute inset-0 flex items-center justify-center p-0 select-none z-10 overflow-hidden">
                       <img
                         src={biz.image}
                         alt={biz.name}
-                        className={`${
-                          isTv ? 'w-full h-full object-cover' : 'max-w-[78%] max-h-[72%] object-contain'
-                        } transform group-hover:scale-105 transition-transform duration-500`}
+                        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                       />
                     </div>
 
