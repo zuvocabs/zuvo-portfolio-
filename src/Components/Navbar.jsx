@@ -110,16 +110,12 @@ export default function Navbar() {
                         className="p-3 rounded-xl border border-gray-100 hover:border-[#015B97]/40 hover:bg-gray-50 transition-all flex items-start gap-3 group/item"
                       >
                         <div className={`w-10 h-10 rounded-full ${
-                          biz.id === 'zuvo-android-tv' ? 'bg-black border border-gray-800' : 'bg-white border border-gray-200/90'
-                        } flex items-center justify-center ${
-                          biz.id === 'zuvo-android-tv' ? 'p-1' : 'p-1.5'
-                        } shrink-0 group-hover/item:border-[#0084D1]/60 overflow-hidden shadow-xs`}>
+                          biz.id === 'zuvo-android-tv' ? 'bg-black border border-transparent' : 'bg-white border border-gray-200/90'
+                        } flex items-center justify-center p-0.5 shrink-0 group-hover/item:border-[#0084D1]/60 overflow-hidden shadow-xs`}>
                           <img
                             src={biz.image || biz.logo}
                             alt={biz.name}
-                            className={`w-full h-full object-contain ${
-                              biz.id === 'zuvo-android-tv' ? 'scale-110' : 'rounded-full'
-                            }`}
+                            className="w-full h-full object-contain rounded-full"
                           />
                         </div>
                         <div className="min-w-0">
