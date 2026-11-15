@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import RouteSEO from './components/RouteSEO'
 
 // Main Corporate Pages
 import Home from './pages/Home'
@@ -36,6 +37,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <RouteSEO />
       <div className="min-h-screen flex flex-col bg-[#F8FAFD] text-[#17171D] relative overflow-hidden">
         {/* Curving Header Blue Gradient Canopy with Soft Bottom Fade-Out - Refined & Lighter */}
         <div className="absolute top-0 left-0 right-0 h-[680px] pointer-events-none z-0 overflow-hidden">
