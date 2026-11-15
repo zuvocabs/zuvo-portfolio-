@@ -170,7 +170,8 @@ export const businessesData = [
     highlights: ["24/7 Availability", "Zero Hidden Charges", "Live Telemetry", "Instant Dispatch"],
     accentGradient: "from-purple-600 via-indigo-600 to-violet-800",
     themeColor: "#015B97",
-    image: "/zuvo-cabs-logo.jpg"
+    image: "/card-zuvo-cabs.png",
+    icon: "/nav-icon-zuvo-cabs.jpg"
   },
   {
     id: "usedq",
@@ -191,7 +192,8 @@ export const businessesData = [
     highlights: ["Verified Sellers", "Secure Messaging", "Circular Economy", "Great Value"],
     accentGradient: "from-indigo-600 via-purple-600 to-blue-700",
     themeColor: "#0268AA",
-    image: "/usedq-logo.jpg"
+    image: "/card-usedq.png",
+    icon: "/nav-icon-usedq.jpg"
   },
   {
     id: "allzon",
@@ -212,7 +214,8 @@ export const businessesData = [
     highlights: ["Pan-India Shipping", "Verified Warranties", "Direct Fitments", "Premium Quality"],
     accentGradient: "from-purple-700 via-pink-600 to-indigo-800",
     themeColor: "#027CCB",
-    image: "/allzon-logo.jpg"
+    image: "/card-allzon.png",
+    icon: "/nav-icon-allzon.jpg"
   },
   {
     id: "allzon-b2b",
@@ -233,7 +236,8 @@ export const businessesData = [
     highlights: ["Tiered Wholesale Rates", "GST Invoicing", "Verified Wholesalers", "Bulk Freight"],
     accentGradient: "from-blue-700 via-indigo-700 to-purple-800",
     themeColor: "#01426E",
-    image: "/allzonb2b-logo.jpg"
+    image: "/card-allzonb2b.png",
+    icon: "/nav-icon-allzonb2b.jpg"
   },
   {
     id: "allzon-supplier",
@@ -254,7 +258,8 @@ export const businessesData = [
     highlights: ["SKU Management", "Automated Invoicing", "Fast Payouts", "Supplier Insights"],
     accentGradient: "from-purple-800 via-indigo-900 to-slate-900",
     themeColor: "#014C7E",
-    image: "/allzon-supplier-logo.jpg"
+    image: "/card-allzon-supplier.png",
+    icon: "/nav-icon-allzon-supplier.jpg"
   },
   {
     id: "zuvo-android-tv",
@@ -276,7 +281,8 @@ export const businessesData = [
     highlights: ["Quantum Color", "Dolby Atmos", "Google TV Certified", "24\" to 55\" Screens"],
     accentGradient: "from-violet-700 via-indigo-800 to-purple-950",
     themeColor: "#015B97",
-    image: "/zuvo-tv-logo.jpg"
+    image: "/card-zuvo-android-tv.png",
+    icon: "/nav-icon-zuvo-tv.jpg"
   },
   {
     id: "digiinova",
@@ -297,7 +303,8 @@ export const businessesData = [
     highlights: ["Full-Spectrum Digital", "Performance Growth", "Custom Web & App", "Creative Branding"],
     accentGradient: "from-cyan-600 via-blue-700 to-indigo-900",
     themeColor: "#0099FF",
-    image: "/digiinova-logo.jpg"
+    image: "/card-digiinova.png",
+    icon: "/nav-icon-digiinova.jpg"
   }
 ];
 

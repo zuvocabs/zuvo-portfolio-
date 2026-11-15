@@ -113,7 +113,7 @@ export default function Navbar() {
                           biz.id === 'zuvo-android-tv' ? 'bg-black border border-transparent' : 'bg-white border border-gray-200/90'
                         } flex items-center justify-center p-0.5 shrink-0 group-hover/item:border-[#0084D1]/60 overflow-hidden shadow-xs`}>
                           <img
-                            src={biz.image || biz.logo}
+                            src={biz.icon || biz.logo || biz.image}
                             alt={biz.name}
                             className="w-full h-full object-contain rounded-full"
                           />
