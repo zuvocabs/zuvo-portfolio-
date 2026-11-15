@@ -90,7 +90,7 @@ export default function Navbar() {
                 <div className="rounded-2xl p-6 border border-gray-200/80 shadow-2xl bg-white/95 backdrop-blur-2xl animate-in fade-in zoom-in-95 duration-150">
                   <div className="pb-3 mb-3 border-b border-gray-200/80 flex items-center justify-between">
                     <div>
-                      <h4 className="text-sm font-bold text-white">Business Portfolio</h4>
+                      <h4 className="text-sm font-bold text-[#17171D]">Business Portfolio</h4>
                       <p className="text-xs text-[#686875]">Operating enterprises across four market sectors</p>
                     </div>
                     <Link
@@ -109,14 +109,14 @@ export default function Navbar() {
                         to={`/businesses/${biz.id}`}
                         className="p-3 rounded-xl border border-gray-100 hover:border-[#015B97]/40 hover:bg-gray-50 transition-all flex items-start gap-3 group/item"
                       >
-                        <div className="w-9 h-9 rounded-lg bg-black/60 border border-gray-200/80 flex items-center justify-center p-1.5 shrink-0 group-hover/item:border-[#0084D1]/50">
-                          <img src={biz.logo} alt={biz.name} className="w-full h-full object-contain" />
+                        <div className="w-9 h-9 rounded-lg bg-black border border-gray-200/80 flex items-center justify-center p-1 shrink-0 group-hover/item:border-[#0084D1]/50 overflow-hidden shadow-xs">
+                          <img src={biz.image || biz.logo} alt={biz.name} className="w-full h-full object-contain" />
                         </div>
                         <div className="min-w-0">
-                          <div className="text-xs font-bold text-white group-hover/item:text-[#015B97] flex items-center gap-1">
+                          <div className="text-xs font-bold text-[#17171D] group-hover/item:text-[#015B97] flex items-center gap-1 transition-colors">
                             <span className="truncate">{biz.name}</span>
                           </div>
-                          <div className="text-[11px] text-[#686875] truncate mt-0.5">{biz.tagline}</div>
+                          <div className="text-[11px] text-[#686875] truncate mt-0.5">{biz.tagline || biz.shortDesc}</div>
                         </div>
                       </Link>
                     ))}
@@ -131,7 +131,7 @@ export default function Navbar() {
             className={`px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all ${
               location.pathname === '/ecosystem'
                 ? 'text-[#015B97] bg-[#015B97]/20 font-bold border border-[#015B97]/30'
-                : 'text-[#5F5F6E] hover:text-white hover:bg-white/5'
+                : 'text-[#5F5F6E] hover:text-[#17171D] hover:bg-black/5'
             }`}
           >
             Our Ecosystem
@@ -147,7 +147,7 @@ export default function Navbar() {
               className={`flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-semibold tracking-wide transition-all cursor-pointer ${
                 location.pathname === '/leadership' || location.pathname === '/people'
                   ? 'text-[#015B97] bg-[#015B97]/20 font-bold border border-[#015B97]/30'
-                  : 'text-[#5F5F6E] hover:text-white hover:bg-white/5'
+                  : 'text-[#5F5F6E] hover:text-[#17171D] hover:bg-black/5'
               }`}
             >
               People & Culture
@@ -164,22 +164,22 @@ export default function Navbar() {
                 <div className="rounded-2xl p-2.5 border border-gray-200/80 shadow-2xl bg-white/95 backdrop-blur-2xl animate-in fade-in zoom-in-95 duration-150 space-y-1">
                   <Link
                     to="/leadership"
-                    className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs text-[#5F5F6E] hover:text-white transition-colors"
+                    className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-gray-50 text-xs text-[#5F5F6E] hover:text-[#015B97] transition-colors"
                   >
                     <Award size={16} className="text-[#015B97] shrink-0" />
                     <div>
-                      <div className="font-bold text-white">Leadership</div>
+                      <div className="font-bold text-[#17171D]">Leadership</div>
                       <div className="text-[10px] text-[#686875]">Founder Mr. Udaya Kumar & CEO Ms. Savitha U</div>
                     </div>
                   </Link>
 
                   <Link
                     to="/people"
-                    className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-white/5 text-xs text-[#5F5F6E] hover:text-white transition-colors"
+                    className="flex items-center gap-2.5 p-2.5 rounded-xl hover:bg-gray-50 text-xs text-[#5F5F6E] hover:text-[#015B97] transition-colors"
                   >
                     <Users size={16} className="text-[#015B97] shrink-0" />
                     <div>
-                      <div className="font-bold text-white">Our People</div>
+                      <div className="font-bold text-[#17171D]">Our People</div>
                       <div className="text-[10px] text-[#686875]">Teams & Workplace Culture</div>
                     </div>
                   </Link>
