@@ -35,11 +35,11 @@ export default function BusinessCard({ business, index = 0 }) {
       )}
 
       {/* 1. Full Logo Card Canvas */}
-      <div className="absolute inset-0 flex items-center justify-center select-none z-10 p-0 overflow-hidden">
+      <div className="absolute inset-0 flex items-center justify-center select-none z-10 p-6 overflow-hidden">
         <img
           src={business.image}
           alt={business.name}
-          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+          className="max-w-[78%] max-h-[72%] object-contain transform group-hover:scale-105 transition-transform duration-500"
         />
       </div>
 
