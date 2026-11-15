@@ -42,7 +42,7 @@ export default function AboutPage() {
               Built on Institutional Discipline & Technological Utility
             </h2>
             <p className="text-[#5F5F6E] text-base leading-relaxed">
-              ZUVO India Pvt. Ltd. was established in 2025 by Founder Mr. Udaya Kumar and is stewarded by CEO Ms. Savitha U alongside executive officers with a clear mandate: build resilient, consumer-focused digital and physical business models that directly address the daily transport, commerce, and electronics requirements of modern India.
+              ZUVO India Pvt. Ltd. was established in 2025 by Founder Mr. Udaya Kumar and is stewarded by CEO Mrs. U. Savitha alongside executive officers with a clear mandate: build resilient, consumer-focused digital and physical business models that directly address the daily transport, commerce, and electronics requirements of modern India.
             </p>
             <p className="text-[#5F5F6E] text-base leading-relaxed">
               Operating from TIDEL Park—the IT backbone of Chennai—ZUVO provides centralized engineering governance, strategic capital allocation, and brand stewardship, enabling each operating venture to scale with autonomy and speed.

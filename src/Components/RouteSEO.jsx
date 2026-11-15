@@ -34,8 +34,8 @@ const routeSEO = {
   },
   '/leadership': {
     title: 'Executive Leadership & Board of Directors | ZUVO India Pvt. Ltd.',
-    description: 'Meet the executive leadership and governing board driving ZUVO India forward: Founder Mr. Udaya Kumar and CEO Ms. Savitha U.',
-    keywords: 'zuvo leadership, Udaya Kumar founder, Savitha U CEO, board of directors zuvo, executive team chennai, corporate governance zuvo india'
+    description: 'Meet the executive leadership and governing board driving ZUVO India forward: Founder Mr. Udaya Kumar and CEO Mrs. U. Savitha.',
+    keywords: 'zuvo leadership, Udaya Kumar founder, U. Savitha CEO, board of directors zuvo, executive team chennai, corporate governance zuvo india'
   },
   '/people': {
     title: 'Our People & Culture | Empowering Talent at ZUVO India',

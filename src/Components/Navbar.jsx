@@ -175,7 +175,7 @@ export default function Navbar() {
                     <Award size={16} className="text-[#015B97] shrink-0" />
                     <div>
                       <div className="font-bold text-[#17171D]">Leadership</div>
-                      <div className="text-[10px] text-[#686875]">Founder Mr. Udaya Kumar & CEO Ms. Savitha U</div>
+                      <div className="text-[10px] text-[#686875]">Founder Mr. Udaya Kumar & CEO Mrs. U. Savitha</div>
                     </div>
                   </Link>
 

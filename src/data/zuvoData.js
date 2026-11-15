@@ -14,12 +14,12 @@ export const companyInfo = {
     visionPhilosophy: "Leadership at ZUVO is defined by disciplined execution, ground-level partner empathy, and relentless long-term value creation. By fostering synergy across mobility, commerce, and consumer hardware, we architect ecosystems where technology serves people with integrity and reliability."
   },
   ceo: {
-    name: "Ms. Savitha U",
+    name: "Mrs. U. Savitha",
     title: "Chief Executive Officer (CEO)",
     role: "CEO",
     company: "ZUVO India Pvt. Ltd.",
     image: "/team-ceo-savitha-u.jpg",
-    bio: "Ms. Savitha U serves as the Chief Executive Officer of ZUVO India Pvt. Ltd., steering the executive operations, business strategy, cross-vertical integration, and institutional expansion across all operating companies. Her leadership ensures operational excellence, robust corporate governance, and sustainable value delivery.",
+    bio: "Mrs. U. Savitha serves as the Chief Executive Officer of ZUVO India Pvt. Ltd., steering the executive operations, business strategy, cross-vertical integration, and institutional expansion across all operating companies. Her leadership ensures operational excellence, robust corporate governance, and sustainable value delivery.",
     quote: "We lead with clarity of mission, operational rigor, and deep respect for every customer, merchant, and partner across the ZUVO ecosystem.",
     visionPhilosophy: "Driving sustainable corporate growth demands seamless alignment between innovative technology and real-world execution. At ZUVO, we champion accountability, agility, and a culture of performance."
   },
@@ -32,14 +32,14 @@ export const companyInfo = {
       focus: "Corporate Governance, Strategic Advisory & Compliance"
     },
     {
-      name: "Udhaya",
+      name: "Udaya Kumar",
       title: "Director",
       role: "Board of Directors",
       company: "ZUVO India Pvt. Ltd.",
       focus: "Executive Oversight, Long-Term Strategy & Growth"
     }
   ],
-  parentDescription: "ZUVO India Pvt. Ltd. is a diversified technology and business conglomerate founded in 2025 and headquartered at TIDEL Park, Chennai. Founded by Mr. Udaya Kumar and led by CEO Ms. Savitha U, ZUVO incubates, scales, and connects high-impact ventures across four strategic verticals: Mobility & Transportation, Consumer Commerce, Wholesale & B2B Commerce, and Consumer Electronics & Digital Innovation.",
+  parentDescription: "ZUVO India Pvt. Ltd. is a diversified technology and business conglomerate founded in 2025 and headquartered at TIDEL Park, Chennai. Founded by Mr. Udaya Kumar and led by CEO Mrs. U. Savitha, ZUVO incubates, scales, and connects high-impact ventures across four strategic verticals: Mobility & Transportation, Consumer Commerce, Wholesale & B2B Commerce, and Consumer Electronics & Digital Innovation.",
   email: "support@zuvocabs.com",
   phone: "+91 90032 41214",
   address: "1st Floor, D Block (Module 115), TIDEL Park, 4, SH 49A, Tharamani, Chennai, Tamil Nadu 600113.",
@@ -78,7 +78,7 @@ export const executiveLeadership = [
     id: "ceo",
     role: "CEO",
     title: "Chief Executive Officer",
-    name: "Savitha U",
+    name: "Mrs. U. Savitha",
     image: "/team-ceo-savitha-u.jpg",
     department: "Executive Management",
     focus: "Corporate strategy, business growth, organizational leadership, and executive execution across all conglomerate ventures."
@@ -329,7 +329,7 @@ export const departmentsData = [
       },
       {
         id: "exec-ceo",
-        name: "Savitha U",
+        name: "Mrs. U. Savitha",
         role: "CEO",
         title: "Chief Executive Officer",
         department: "Executive Management",

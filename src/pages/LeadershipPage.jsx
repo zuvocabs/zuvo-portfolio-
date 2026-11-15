@@ -31,7 +31,7 @@ export default function LeadershipPage() {
           </h1>
 
           <p className="mt-5 text-base sm:text-lg text-[#5F5F6E] max-w-2xl mx-auto leading-relaxed">
-            Founded in 2025 by Mr. Udaya Kumar and stewarded by CEO Ms. Savitha U alongside executive officers, ZUVO India Pvt. Ltd. drives institutional discipline and scalable innovation from TIDEL Park, Chennai.
+            Founded in 2025 by Mr. Udaya Kumar and stewarded by CEO Mrs. U. Savitha alongside executive officers, ZUVO India Pvt. Ltd. drives institutional discipline and scalable innovation from TIDEL Park, Chennai.
           </p>
         </div>
       </div>
