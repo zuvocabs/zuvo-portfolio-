@@ -1,0 +1,70 @@
+name: Deploy Website to Production (zuvohub.com)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: zuvohub-website-production
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy to AWS Production
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Production Website Bundle
+        run: npm run build
+
+      - name: Verify Build Artifacts
+        run: |
+          test -f dist/index.html
+          test -f dist/robots.txt
+          test -f dist/sitemap.xml
+          echo "Production website bundle verified."
+
+      - name: Configure SSH Key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PROD_SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.PROD_SSH_HOST || '52.66.73.27' }}
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Deploy to /var/www/zuvohub_website
+        env:
+          SSH_HOST: ${{ secrets.PROD_SSH_HOST || '52.66.73.27' }}
+          SSH_USER: ${{ secrets.PROD_SSH_USER || 'ubuntu' }}
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes" \
+            dist/ "$SSH_USER@$SSH_HOST":/var/www/zuvohub_website/
+
+          ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=yes -o IdentitiesOnly=yes \
+            "$SSH_USER@$SSH_HOST" \
+            "sudo chown -R ubuntu:www-data /var/www/zuvohub_website && sudo find /var/www/zuvohub_website -type d -exec chmod 775 {} + && sudo find /var/www/zuvohub_website -type f -exec chmod 664 {} +"
+
+      - name: Health Check Live Ingress
+        run: |
+          echo "Verifying live website ingress at https://zuvohub.com ..."
+          curl -f -s -m 15 https://zuvohub.com | grep -q "ZUVO INDIA"
+          echo "Live website ingress verified successfully."
