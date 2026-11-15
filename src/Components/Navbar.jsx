@@ -109,8 +109,8 @@ export default function Navbar() {
                         to={`/businesses/${biz.id}`}
                         className="p-3 rounded-xl border border-gray-100 hover:border-[#015B97]/40 hover:bg-gray-50 transition-all flex items-start gap-3 group/item"
                       >
-                        <div className="w-10 h-10 rounded-lg bg-white border border-gray-200/80 flex items-center justify-center p-1.5 shrink-0 group-hover/item:border-[#0084D1]/50 overflow-hidden shadow-xs">
-                          <img src={biz.image || biz.logo} alt={biz.name} className="w-full h-full object-contain" />
+                        <div className="w-10 h-10 rounded-full bg-white border border-gray-200/90 flex items-center justify-center p-1.5 shrink-0 group-hover/item:border-[#0084D1]/60 overflow-hidden shadow-xs">
+                          <img src={biz.image || biz.logo} alt={biz.name} className="w-full h-full object-contain rounded-full" />
                         </div>
                         <div className="min-w-0">
                           <div className="text-xs font-bold text-[#17171D] group-hover/item:text-[#015B97] flex items-center gap-1 transition-colors">
