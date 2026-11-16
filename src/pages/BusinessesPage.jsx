@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import SectionHeading from '../components/SectionHeading';
-import BusinessCard from '../components/BusinessCard';
+import SectionHeading from '../Components/SectionHeading';
+import BusinessCard from '../Components/BusinessCard';
 import { businessesData, businessVerticals } from '../data/zuvoData';
 import { Layers, Briefcase, Car, ShoppingBag, Tv, ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';

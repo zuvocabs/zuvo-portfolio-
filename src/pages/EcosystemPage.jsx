@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Smartphone, Monitor, ShoppingCart, Database, ArrowRight, CheckCircle2, Server, ExternalLink, Network, Layers, Cpu, ShieldCheck, Zap, Globe } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
-import DigitalEcosystem from '../components/DigitalEcosystem';
+import SectionHeading from '../Components/SectionHeading';
+import DigitalEcosystem from '../Components/DigitalEcosystem';
 import { companyInfo, businessesData } from '../data/zuvoData';
 
 export default function EcosystemPage() {

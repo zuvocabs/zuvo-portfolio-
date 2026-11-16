@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Users, Building2, Code2, Megaphone, TrendingUp, Cpu, Headset, CheckCircle2, ArrowRight, ShieldCheck, HeartHandshake, Crown } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { departmentsData, cultureStories, companyInfo } from '../data/zuvoData';
 
 export default function PeoplePage() {

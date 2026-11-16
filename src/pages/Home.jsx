@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import Hero from '../components/Hero';
-import About from '../components/About';
-import BusinessGrid from '../components/BusinessGrid';
-import Vision from '../components/Vision';
-import WhyZuvo from '../components/WhyZuvo';
+import Hero from '../Components/Hero';
+import About from '../Components/About';
+import BusinessGrid from '../Components/BusinessGrid';
+import Vision from '../Components/Vision';
+import WhyZuvo from '../Components/WhyZuvo';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Handshake, Briefcase, ArrowRight } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 
 export default function Home() {
   useEffect(() => {

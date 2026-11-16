@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Briefcase, MapPin, Clock, ArrowRight, CheckCircle2, Send, AlertCircle, FileText, Sparkles, Building2, GraduationCap, Heart, ShieldCheck } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { companyInfo, careerOpenings } from '../data/zuvoData';
 
 export default function CareersPage() {

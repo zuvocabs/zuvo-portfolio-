@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { User, Award, ShieldCheck, Quote, Sparkles, Briefcase, CheckCircle2 } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
-import AccordionGallery from '../components/AccordionGallery';
+import SectionHeading from '../Components/SectionHeading';
+import AccordionGallery from '../Components/AccordionGallery';
 import { companyInfo, executiveLeadership } from '../data/zuvoData';
 
 export default function LeadershipPage() {

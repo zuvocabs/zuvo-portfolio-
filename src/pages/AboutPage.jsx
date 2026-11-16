@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, MapPin, Mail, Phone, ArrowRight, Award, Target, Compass, Sparkles, Building2, CheckCircle2 } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { companyInfo, businessVerticals } from '../data/zuvoData';
 
 export default function AboutPage() {

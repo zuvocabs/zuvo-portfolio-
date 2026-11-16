@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Car, ExternalLink, ArrowRight, ShieldCheck, MapPin, Zap, Navigation, Clock, CheckCircle2, ChevronRight } from 'lucide-react';
-import SectionHeading from '../../components/SectionHeading';
+import SectionHeading from '../../Components/SectionHeading';
 import { businessesData } from '../../data/zuvoData';
 
 export default function ZuvoCabs() {

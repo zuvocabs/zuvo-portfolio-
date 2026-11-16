@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Cpu, ShieldCheck, Zap, Server, Code2, Globe, Database, Smartphone, CheckCircle2, ArrowRight } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { companyInfo, businessesData } from '../data/zuvoData';
 
 export default function TechnologyPage() {

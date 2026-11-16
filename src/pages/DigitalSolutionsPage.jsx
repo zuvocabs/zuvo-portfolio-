@@ -19,7 +19,7 @@ import {
   Terminal,
   Server
 } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { companyInfo } from '../data/zuvoData';
 
 export default function DigitalSolutionsPage() {

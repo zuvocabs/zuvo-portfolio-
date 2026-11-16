@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Handshake, ArrowRight, CheckCircle2, Building2, Truck, Users, Tv, ShoppingCart, Send, ExternalLink, ShieldCheck } from 'lucide-react';
-import SectionHeading from '../components/SectionHeading';
+import SectionHeading from '../Components/SectionHeading';
 import { companyInfo, partnershipCategories } from '../data/zuvoData';
 
 export default function PartnershipsPage() {
