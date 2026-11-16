@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop'
-import RouteSEO from './components/RouteSEO'
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+import ScrollToTop from './Components/ScrollToTop'
+import RouteSEO from './Components/RouteSEO'
 
 // Main Corporate Pages
 import Home from './pages/Home'
